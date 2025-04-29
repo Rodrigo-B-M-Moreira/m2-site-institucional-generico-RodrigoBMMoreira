@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-    /* Colors */
     --lighter-blue: #4C6EF5;
     --darker-blue: #364FC7;
     --background-lighter-grey: #343A40;
@@ -12,37 +11,35 @@
     --text-darker-grey: #ADB5BD;
     --text-white: #F8F9FA;
 
-    /* Font Family */
     --font-family-default: 'Inter', sans-serif;
 
-    /* Titles */
     --title1-font-weight: 600;
-    --title1-font-size: 52px;
+    --title1-font-size: clamp(40px, 5vw, 52px);  
     --title1-line-height: 140%;
 
     --title2-font-weight: 600;
-    --title2-font-size: 40px;
+    --title2-font-size: clamp(32px, 4vw, 40px);  
     --title2-line-height: 160%;
 
     --title3-font-weight: 600;
-    --title3-font-size: 32px;
+    --title3-font-size: clamp(24px, 3vw, 32px);  
     --title3-line-height: 160%;
 
     /* Texts */
     --text1-font-weight: 400;
-    --text1-font-size: 20px;
+    --text1-font-size: clamp(16px, 2vw, 20px);  
     --text1-line-height: 150%;
 
     --text2-font-weight: 400;
-    --text2-font-size: 18px;
+    --text2-font-size: clamp(14px, 1.8vw, 18px);  
     --text2-line-height: 150%;
 
     --text3-font-weight: 400;
-    --text3-font-size: 16px;
+    --text3-font-size: clamp(12px, 1.6vw, 16px);  
     --text3-line-height: 150%;
 
     --text4-font-weight: 600;
-    --text4-font-size: 16px;
+    --text4-font-size: clamp(14px, 1.8vw, 16px);  
     --text4-line-height: 150%;
 }
 
@@ -50,38 +47,4 @@ body {
     font-family: var(--font-family-default);
     background-color: var(--background-light-grey);
     color: var(--text-white);
-}
-
-/* Responsividade para dispositivos específicos */
-@media screen and (max-width: 1024px) {
-    :root {
-        --title1-font-size: clamp(32px, 6vw, 40px);
-        --title2-font-size: clamp(28px, 5vw, 36px);
-        --title3-font-size: clamp(24px, 4vw, 30px);
-        --text1-font-size: clamp(16px, 3.5vw, 18px);
-        --text2-font-size: clamp(14px, 3vw, 16px);
-        --text3-font-size: clamp(12px, 2.5vw, 14px);
-    }
-}
-
-@media screen and (max-width: 768px) {
-    :root {
-        --title1-font-size: clamp(28px, 7vw, 36px);
-        --title2-font-size: clamp(24px, 6vw, 30px);
-        --title3-font-size: clamp(20px, 5vw, 24px);
-        --text1-font-size: clamp(14px, 4vw, 16px);
-        --text2-font-size: clamp(12px, 3.5vw, 14px);
-        --text3-font-size: clamp(12px, 3vw, 14px);
-    }
-}
-
-@media screen and (max-width: 425px) {
-    :root {
-        --title1-font-size: clamp(24px, 8vw, 30px);
-        --title2-font-size: clamp(22px, 7vw, 28px);
-        --title3-font-size: clamp(18px, 6vw, 22px);
-        --text1-font-size: clamp(12px, 5vw, 14px);
-        --text2-font-size: clamp(10px, 4vw, 12px);
-        --text3-font-size: clamp(10px, 4vw, 12px);
-    }
 }

@@ -1,9 +1,12 @@
+/* Estilos do header */
 header {
     width: 100%;
     background-color: var(--background-dark-grey);
     border-bottom: 2px solid var(--lighter-blue);
     z-index: 100;
     position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .header__container {
@@ -25,7 +28,6 @@ header {
     width: 266px;
     height: 60px;
     padding: 20px 32px;
-    gap: 10px;
     background-color: var(--background-dark-grey);
     color: var(--text-white);
     border: 1px solid var(--text-white);
@@ -36,6 +38,7 @@ header {
     background-color: var(--background-light-grey);
 }
 
+/* Estilos do banner */
 .banner__container {
     max-width: 1728px;
     height: 781px;
@@ -50,7 +53,7 @@ header {
 
 .banner__title {
     font-weight: 600;
-    font-size: 52px;
+    font-size: var(--title1-font-size);
     line-height: 140%;
     margin: 0;
 }
@@ -58,7 +61,7 @@ header {
 .banner__description {
     font-family: var(--font-family-default);
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--text2-font-size);
     line-height: 150%;
     color: var(--text-darker-grey);
     margin: 0;
@@ -76,7 +79,6 @@ header {
     padding: 20px 32px;
     cursor: pointer;
     text-decoration: none;
-    display: inline-block;
     text-align: center;
 }
 
@@ -84,54 +86,45 @@ header {
     background-color: var(--darker-blue);
 }
 
+/* Estilos da seção "Sobre" */
 .about__container {
     display: flex;
     justify-content: flex-start;
     width: 100%;
     height: 284px;
-    padding-top: 82px;
-    padding-right: 236px;
-    padding-bottom: 82px;
-    padding-left: 236px;
+    padding: 82px 236px;
     gap: 56px;
     background-color: var(--background-dark-grey);
 }
 
 .about__title {
     font-weight: 600;
-    font-size: 40px;
+    font-size: var(--title2-font-size);
     line-height: 160%;
-    letter-spacing: 0%;
-    vertical-align: middle;
     white-space: nowrap;
     max-width: 30%;
 }
 
 .about__description {
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--text2-font-size);
     line-height: 150%;
-    letter-spacing: 0%;
     text-align: justify;
-    vertical-align: middle;
-    color: var(--text-grey);
+    color: var(--text-darker-grey);
     max-width: 65%;
 }
 
+/* Estilos do FAQ */
 .faq__container {
     display: flex;
     justify-content: space-between;
     width: 100%;
     min-height: 100vh;
-    padding-top: 82px;
-    padding-right: 236px;
-    padding-bottom: 82px;
-    padding-left: 236px;
+    padding: 82px 236px;
     gap: 90px;
 }
 
 .faq__intro {
-    padding-top: 60px;
     width: 620px;
     height: 280px;
     position: sticky;
@@ -141,54 +134,47 @@ header {
 
 .faq__title {
     font-weight: 600;
-    font-size: 40px;
+    font-size: var(--title2-font-size);
     line-height: 160%;
-    letter-spacing: 0%;
 }
 
 .faq__description {
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--text2-font-size);
     line-height: 150%;
-    letter-spacing: 0%;
     text-align: justify;
-    color: var(--text-darker-grey)
+    color: var(--text-darker-grey);
 }
 
 .faq__button {
     width: 266px;
     height: 60px;
     margin-top: 25px;
-    padding-top: 20px;
-    padding-right: 32px;
-    padding-bottom: 20px;
-    padding-left: 32px;
-    gap: 10px;
-    border-width: 1px;
+    padding: 20px 32px;
+    border: 1px solid var(--lighter-blue);
     background-color: var(--lighter-blue);
-    color: var(--text-white)
+    color: var(--text-white);
 }
 
 .faq__button:hover {
     background-color: var(--darker-blue);
 }
 
+/* Estilos das perguntas e respostas */
 .faq__question {
     font-weight: 600;
-    font-size: 32px;
+    font-size: var(--title3-font-size);
     line-height: 160%;
-    letter-spacing: 0%;
     text-align: center;
     margin-bottom: 30px;
 }
 
 .faq__answer {
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--text2-font-size);
     line-height: 150%;
-    letter-spacing: 0%;
     text-align: justify;
-    color: var(--text-darker-grey)
+    color: var(--text-darker-grey);
 }
 
 ul {
@@ -201,25 +187,20 @@ ul {
     border-bottom: 1px solid var(--lighter-blue);
 }
 
+/* Estilos dos comentários */
 .comments__container {
     display: flex;
     justify-content: flex-start;
     flex-direction: row-reverse;
     width: 100%;
     height: 1387px;
-    padding-top: 82px;
-    padding-right: 120px;
-    padding-bottom: 82px;
-    padding-left: 120px;
+    padding: 150px 120px;
     gap: 480px;
-    padding-top: 150px;
 }
 
 .comments__intro {
     width: 580px;
     height: 443px;
-    padding-left: 86.4px;
-    gap: 35px;
     background-color: var(--lighter-blue);
     display: flex;
     flex-direction: column;
@@ -231,38 +212,29 @@ ul {
     position: sticky;
     top: 100px;
     align-self: flex-start;
-    padding-top: 100px;
 }
 
 .comments__title {
     font-weight: 600;
-    font-size: 40px;
+    font-size: var(--title2-font-size);
     line-height: 160%;
-    letter-spacing: 0%;
-    color: var(--title-white);
+    color: var(--text-white);
 }
 
 .comments__description {
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--text2-font-size);
     line-height: 150%;
-    letter-spacing: 0%;
     text-align: justify;
     color: var(--text-white);
 }
 
+/* Lista de comentários */
 .comments__list {
     width: 620px;
-    height: 179px;
-    gap: 16px;
-    display: flex;
-    flex-direction: column;
-}
-
-.comments__list {
-    display: flex;
-    flex-direction: column;
     gap: 24px;
+    display: flex;
+    flex-direction: column;
 }
 
 .comment {
@@ -280,42 +252,33 @@ ul {
     flex-direction: column;
     min-width: 200px;
     max-width: 200px;
-    flex-shrink: 0;
     position: relative;
     z-index: 1;
 }
 
 .comment__name {
     font-weight: 600;
-    font-size: 18px;
-    line-height: 160%;
-    color: var(--title-white);
-    margin: 0;
-    background-color: var(--background-light-grey);
+    font-size: var(--text2-font-size);
+    color: var(--text-white);
 }
 
 .comment__info {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
+    font-size: var(--text3-font-size);
     color: var(--text-darker-grey);
-    margin: 4px 0 0 0;
-    background-color: var(--background-light-grey);
+    margin-top: 4px;
 }
 
 .comment__text {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: justify;
+    font-size: var(--text2-font-size);
     color: var(--text-darker-grey);
     flex: 1;
     margin: 0;
     word-break: break-word;
 }
 
-
-
+/* Estilos do rodapé */
 .footer__container {
     background-color: var(--background-dark-grey);
     display: flex;
@@ -329,21 +292,19 @@ ul {
     height: 80px;
 }
 
+/* Estilos do modal */
 .modal-info {
     width: 90%;
     max-width: 500px;
     padding: 40px;
-    border: none;
     border-radius: 12px;
     background-color: var(--background-dark-grey);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     text-align: left;
-    position: relative;
-    z-index: 1000;
-    position: fixed; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .modal-info::backdrop {
@@ -373,7 +334,6 @@ ul {
 
 .modal-info__text {
     font-size: 16px;
-    line-height: 150%;
     color: var(--text-darker-grey);
     margin-bottom: 24px;
 }
