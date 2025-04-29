@@ -132,11 +132,11 @@ header {
 
 .faq__intro {
     padding-top: 60px;
-    width: 620;
-    height: 280;
+    width: 620px;
+    height: 280px;
     position: sticky;
-    top: 100px; 
-    align-self: flex-start; 
+    top: 100px;
+    align-self: flex-start;
 }
 
 .faq__title {
@@ -229,8 +229,8 @@ ul {
     padding: 40px;
     gap: 35px;
     position: sticky;
-    top: 100px; 
-    align-self: flex-start; 
+    top: 100px;
+    align-self: flex-start;
     padding-top: 100px;
 }
 
@@ -327,4 +327,84 @@ ul {
 .footer__logo {
     width: 200px;
     height: 80px;
+}
+
+.modal-info {
+    width: 90%;
+    max-width: 500px;
+    padding: 40px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--background-dark-grey);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    text-align: left;
+    position: relative;
+    z-index: 1000;
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.modal-info::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-info__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 4px;
+    color: var(--text-white);
+    cursor: pointer;
+    padding: 4px 10px;
+}
+
+.modal-info__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-white);
+    margin-bottom: 16px;
+}
+
+.modal-info__text {
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--text-darker-grey);
+    margin-bottom: 24px;
+}
+
+.modal-info__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.modal-info__input {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--background-light-grey);
+    border: none;
+    border-radius: 4px;
+    color: var(--text-white);
+    font-size: 16px;
+}
+
+.modal-info__submit {
+    padding: 16px;
+    background-color: var(--lighter-blue);
+    color: var(--text-white);
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-info__submit:hover {
+    background-color: var(--darker-blue);
 }

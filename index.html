@@ -200,11 +200,19 @@
 
   <!-- ====== Modal (em construção) ====== -->
   <dialog id="modal-info" class="modal-info">
-    <!-- conteúdo do modal aqui -->
+    <button class="modal-info__close" id="modalClose">×</button>
+    <h2 class="modal-info__title">Cadastro</h2>
+    <p class="modal-info__text">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+    </p>
+    <form class="modal-info__form">
+      <input type="email" placeholder="Digitar email" class="modal-info__input" required />
+      <button type="submit" class="modal-info__submit">Entrar na lista para próxima turma</button>
+    </form>
   </dialog>
 
   <script src="./src/scripts/index.js"></script>
 </body>
 
 </html>
-
